@@ -1,0 +1,109 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background: #3c5077;
+    color: rgb(255, 255, 255);
+}
+
+.board {
+    display: inline-block;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: beige;
+    color: black;
+}
+
+.reveal {
+    background-color: #f5ebbd;
+    color: black;
+}
+
+.mine {
+    background-color: chartreuse;
+}
+
+#restart-Button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgb(97, 150, 185);
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    padding: 15px 25px;
+    text-align: center;
+
+}
+
+.gameBoard {
+    width: 100%;
+    height: 100vh;
+    background: #3c5077;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popUp {
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.popUp img {
+    width: 200px;
+    margin-top: -50px;
+    border-radius: 20%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.open-popUp {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popUp h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 0px 0 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.popUp button {
+    width: 100;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #3c5077;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
